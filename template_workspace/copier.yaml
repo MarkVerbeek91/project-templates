@@ -1,0 +1,12 @@
+# questions
+workspace_name:
+    type: str
+    help: Wat is the name of your workspace?
+
+module_name:
+    type: str
+    help: Wat is the name of your package?
+
+packages:
+    type: yaml
+    help: Wat are the name of your packages?
