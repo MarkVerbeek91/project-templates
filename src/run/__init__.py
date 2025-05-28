@@ -24,16 +24,17 @@ answers = {
             "description": "Sample package description",
             "module_name": "sample_module_02",
             "package_name": "sample_package_02",
-        }
+        },
     ],
 }
 
 # Create a project from a local path
 run_copy(str(template_dir), str(destination), data=answers)
 
-destination = destination / answers["workspace_name"] / "packages"
+workspace_name = str(answers["workspace_name"])
+destination = destination / workspace_name / "packages"
 
-for package in answers["packages"]:
+for package in list(answers["packages"]):
     package_dir = destination / package["project_name"]
 
     template_dir = workspace_dir / Path("template_project")

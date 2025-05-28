@@ -19,7 +19,7 @@ dev = [
 ]
 
 [project.scripts]
-template = "{{ module_name }}:main"
+{{ module_name }} = "{{ module_name }}:main"
 
 [build-system]
 requires = ["hatchling"]
@@ -48,6 +48,7 @@ testpaths = [
 ]
 markers = [
     "integration: mark test as integration test",
+    "component: mark test as component test",
 ]
 
 [tool.mypy]

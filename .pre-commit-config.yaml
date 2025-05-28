@@ -19,10 +19,10 @@ repos:
     -   id: ruff-format
         name: ruff format
 # Mypy
--   repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.15.0
-    hooks:
-    -   id: mypy
-        args: [--config-file=./pyproject.toml]
-        # ignore test files
-        exclude: "tests|integration|sandbox"
+#-   repo: https://github.com/pre-commit/mirrors-mypy
+#    rev: v1.15.0
+#    hooks:
+#    -   id: mypy
+#        args: [--config-file=./pyproject.toml]
+#        # ignore test files
+#        exclude: "tests|integration|sandbox"

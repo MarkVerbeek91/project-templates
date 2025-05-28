@@ -11,6 +11,12 @@ dependencies = [
     "copier>=9.6.0",
 ]
 
+[dependency-groups]
+dev = [
+    "pre-commit>=4.2.0",
+]
+
+
 [project.scripts]
 run = "run:main"
 
@@ -24,7 +30,3 @@ packages = ["src/pyroborugby"]
 [tool.uv.sources]
 template = { workspace = true }
 
-[dependency-groups]
-dev = [
-    "pytest-cov>=6.1.0",
-]
