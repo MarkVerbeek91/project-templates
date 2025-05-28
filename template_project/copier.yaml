@@ -1,8 +1,0 @@
-# questions
-project_name:
-    type: str
-    help: Wat is the name of your project?
-
-module_name:
-    type: str
-    help: Wat is the name of your package?

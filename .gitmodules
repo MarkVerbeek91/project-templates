@@ -1,0 +1,6 @@
+[submodule "python-project-template"]
+	path = python-project-template
+	url = https://github.com/MarkVerbeek91/python-project-template
+[submodule "python-workspace-template"]
+	path = python-workspace-template
+	url = git@github.com:MarkVerbeek91/python-workspace-template.git
