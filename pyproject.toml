@@ -1,12 +1,12 @@
 [project]
 name = "run"
 version = "0.1.0"
-description = "Add your description here"
+description = "Project to create a new Python project with a workspace structure using Copier."
 readme = "README.md"
 authors = [
-    { name = "M. Verbeek", email = "mark.verbeek@thermofisher.com" }
+    { name = "M. Verbeek", email = "mark.verbeek91@gmail.com" }
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "copier>=9.6.0",
 ]
@@ -16,17 +16,14 @@ dev = [
     "pre-commit>=4.2.0",
 ]
 
-
 [project.scripts]
-run = "run:main"
+create_project = "run:create_project"
+create_workspace = "run:create_workspace"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/pyroborugby"]
-
-[tool.uv.sources]
-template = { workspace = true }
+packages = ["src/run"]
 
